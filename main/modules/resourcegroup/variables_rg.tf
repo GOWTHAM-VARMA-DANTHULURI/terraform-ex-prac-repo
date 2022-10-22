@@ -54,29 +54,29 @@ variable "project_name" {
   //}
 //}
 
-variable "storageaccountname" {
-  description = "Name of the storage Acount"
-  type = string
-  default = "gowthamstorage01"
-}
+//variable "storageaccountname" {
+  //description = "Name of the storage Acount"
+  //type = string
+  //default = "gowthamstorage01"
+//}
 
 
-variable "storage_account_tier" {
-  description = "Storage Account Tier"
-  type = string
-  default = "Standard"
-}
+//variable "storage_account_tier" {
+  //description = "Storage Account Tier"
+  //type = string
+  //default = "Standard"
+//}
 
-variable "storage_account_replication_type" {
-  description = "Storage Account's Account Replication Type"
-  type = string
-  default = "GRS"
-}
+//variable "storage_account_replication_type" {
+  //description = "Storage Account's Account Replication Type"
+  //type = string
+  //default = "GRS"
+//}
 
-variable "storage_account_tags" {
-  description = "tags for the Storage Account"
-  type = map(string)
-  default = {
-      environment = "staging"
-  }
-}
+//variable "storage_account_tags" {
+  //description = "tags for the Storage Account"
+  //type = map(string)
+  //default = {
+    //  environment = "staging"
+  //}
+//}
