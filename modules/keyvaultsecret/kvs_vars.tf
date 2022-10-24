@@ -17,7 +17,7 @@ variable "secret_value" {
 
 variable "key_vault_id" {
   description = "Default application name in short form."
-  default     = "keyvault_id"
+  default     = "kv_id"
   type        = string
 }
 

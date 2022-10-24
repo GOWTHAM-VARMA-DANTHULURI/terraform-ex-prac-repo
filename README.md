@@ -1,5 +1,14 @@
 # Introduction 
- This is the terraform script to create Resource Group, Key Vault, KV Access Policy, Key Vault Secrets & AKS Cluster
+ This is the terraform script to create 
+ - Resource Group 
+ - Key Vault, 
+ - KV Access Policy, 
+ - Key Vault Secrets 
+ - AKS Cluster
+ - CosmosDB
+ - StorageAccount
+ - FunctionApp
+ - AppServicePlan
 
 # Folder Structure
  	main 
@@ -36,7 +45,7 @@
 - Create a resource group module first and call it in main.tf
 - Create a key vault module and call it main.tf
 - Make sure to create access policy in key vault (because though you create key vault, unless you access it, you will not be able to write secrets to it)
-- Create a module for aks cluster and call it main.tf (make sure to write outputs as they may need to push into keyvault)
-- Create a module for keyvault secret and call it in main.tf (make sure to push the aks outputs as keyvault secrets )
+- Create a module for storage account, function app, appserviceplan etc 
+- Create a module for cosmosdb,aks cluster and call it main.tf (make sure to write outputs as they may need to push into keyvault)
+- Create a module for keyvault secret and call it in main.tf (make sure to push the aks outputs, cosmodb outputs as keyvault secrets )
 
-<img src="diagram.png" width="200" height="300" align="center">

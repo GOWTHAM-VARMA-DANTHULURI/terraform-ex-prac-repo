@@ -14,21 +14,32 @@ variable "tags" {
       "source" = "terraform"
       "env"    = "dev"
       "cost"   = "163"
-      "dept"   = "finance"
+      "dept"   = "InfoTech"
     }
 }
 
 
 variable "kv_name" {
   description = ""
-  default = "gowthamkeyvalue007"
+  default = "gowtham-keyvault007"
+}
+
+variable "st_name" {
+  description = "(Required) Specifies the name of the storage account. Changing this forces a new resource to be created. This must be unique across the entire Azure service, not just within the resource group."
+  default = "gowthamstorage007"
+}
+
+variable "asp_name" {
+  description = ""
+  default = "gowtham-asp-007"
 }
 
 variable "fun_name" {
   description = ""
-  default = "gowtham-function-007"
+  default = "gowtham-function-001"
 }
 
 variable "storage_account_access_key" {
-    default = "gowtham-function-007"
+    default = "gowtham-function-001"
 }
+
