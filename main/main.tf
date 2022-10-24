@@ -9,9 +9,11 @@ module "resource_group" {
  
 module "storage_account" {
   source = "./modules/storage"
-  depends_on = [
-    module.resource_group
-  ]
+  depends_on = [module.resource_group]
   resource_group_name = module.resource_group.resource_group_name
+}
 
+module "function_app_plan" {
+  source = "./modules/functionapp"
+  depends_on = [module.storage_account]
 }

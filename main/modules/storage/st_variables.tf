@@ -26,6 +26,6 @@ variable "resource_group_name" {
 
 variable "storage_name" {
   description = "name of the storage account"
-  default = "mychutki0002"
+  default = "gvterrastorageforday4"
   
 }
